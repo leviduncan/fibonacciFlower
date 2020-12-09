@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#canvas1 {
+    position: absolute;
+    border:0px solid black;
+    background: lightblue;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
