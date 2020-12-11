@@ -8,17 +8,17 @@ hue = Math.random() * 360
 
 // Global settings for algorithm
 let number = 0
-let scale = 15
+let scale = 10
 
 function drawFlower(){
-    let angle = number * 1
+    let angle = number * 0.8
     let radius = scale * Math.sqrt(number)
     let positionX = radius * Math.sin(angle) + canvas.width/2
     let positionY = radius * Math.cos(angle) + canvas.height/2
     
     // Canvas api drawing methods
     ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%)'
-    ctx.strokeStyle = 'red'
+    ctx.strokeStyle = 'hsl(' + hue + ', 100%, 50%)'
     ctx.lineWidth = 4
     ctx.beginPath()
     ctx.arc(positionX, positionY, 20, 0, Math.PI * 2)
